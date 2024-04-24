@@ -62,5 +62,38 @@ class ChatServer {
 }
 
 ```
+
+# First time using `/add-message?s=Hello&user=Shihua`:
 ![Image](First.png)
+1.
+
+The `handleRequest(URI url)` method are called.
+The `log(String s)` method, which records the chat entries to the session.log file.
+
+2.
+
+`URI url`: The argument of handleRequest. It includes the path `/add-message` and the string `s=Hello&user=Shihua`.
+`List<String> messages`: It is an empty list for now. After using `/add-message`, this field contains every chat messages stored from the file(`reporttwo.txt`).
+`String path`: This field holds the path to the file(`reporttwo.txt`). This won't change after using methods.
+
+3.
+
+`messages` field will be changed and contain "[Shihua: Hello]".
+
+
+# First time using `/add-message?s=How are you&user=yang`:
 ![Image](2.png)
+1.
+
+The `handleRequest(URI url)` method are called again.
+The `log(String s)` method, which records the chat entries to the session.log file.
+
+2.
+
+`URI url`: The argument of handleRequest. It now includes the path `/add-message` and the string `s=How are you&user=yang`.
+`List<String> messages`: Now, it already contains `"Shihua: Hello"` from the previous method call.
+`String path`: This field holds the path to the file(`reporttwo.txt`). This won't change after using methods.
+
+3.
+
+`messages` field will be changed and contain `["Shihua: Hello", "yang: How are you"]`.
