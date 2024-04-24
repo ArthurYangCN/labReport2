@@ -5,6 +5,7 @@
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.InetSocketAddress;
+import java.net.InetAddress;
 import java.net.URI;
 
 import com.sun.net.httpserver.HttpExchange;
@@ -12,7 +13,7 @@ import com.sun.net.httpserver.HttpHandler;
 import com.sun.net.httpserver.HttpServer;
 
 interface URLHandler {
-    String handleRequest(URI url);
+    String handleRequest(URI url) throws Exception;
 }
 
 class ServerHttpHandler implements HttpHandler {
@@ -48,6 +49,7 @@ public class Server {
 
         //start the server
         server.start();
-        System.out.println("Server Started! If on your local computer, visit http://localhost:" + port + " to visit.");
+        System.out.println("Server started! Access on PrairieLearn through the 'ports' button next to the Terminal tab.");
+        System.out.println("Or, to access locally from a terminal on this computer, use http://localhost:" + port + " )");
     }
 }
