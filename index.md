@@ -81,7 +81,7 @@ The `log(String s)` method, which records the chat entries to the session.log fi
 `messages` field will be changed and contain "[Shihua: Hello]".
 
 
-# First time using `/add-message?s=How are you&user=yang`:
+# Second time using `/add-message?s=How are you&user=yang`:
 ![Image](2.png)
 1.
 
