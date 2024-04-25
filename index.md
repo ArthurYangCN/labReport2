@@ -97,3 +97,22 @@ The `log(String s)` method, which records the chat entries to the session.log fi
 3.
 
 `messages` field will be changed and contain `["Shihua: Hello", "yang: How are you"]`.
+
+# Part Two:
+
+# 1:
+![Image](privatekey.png)
+
+
+# 2:
+![Image](autkey.png)
+
+
+# 3:
+![Image](login.png)
+
+# Part Three:
+
+In week 2 and 3, I learned how to connect and use remote server, which is interesting to know, because I didn't know I have a remote server account in UCSD. I also learned how to create SSH keys which I never heard before to connect with my remote server.
+
+
